@@ -220,6 +220,9 @@ set viminfo+=n~/.vim/dirs/viminfo
 " store yankring history file there too
 let g:yankring_history_dir = '~/.vim/dirs/'
 
+" trying another color scheme.
+let g:molokai_original = 1
+
 " create needed directories if they don't exist
 if !isdirectory(&backupdir)
     call mkdir(&backupdir, "p")
@@ -241,6 +244,7 @@ endif
 map <F4> :TagbarToggle<CR>
 " autofocus on tagbar open
 let g:tagbar_autofocus = 1
+let g:tagbar_width = 50
 
 " NERDTree ----------------------------- 
 
@@ -263,6 +267,10 @@ let NERDTreeShowBookmarks=1
 " close nerdtree when closing content.
 let g:nerdtree_tabs_autoclose=1
 
+" Tabbar color scheme ------------------
+hi TabLine      guifg=#333 guibg=#222 gui=none ctermfg=254 ctermbg=238 cterm=none
+hi TabLineSel   guifg=#666 guibg=#222 gui=bold ctermfg=231 ctermbg=235 cterm=bold
+hi TabLineFill  guifg=#999 guibg=#222 gui=none ctermfg=254 ctermbg=238 cterm=none
 
 " Tasklist ------------------------------
 
