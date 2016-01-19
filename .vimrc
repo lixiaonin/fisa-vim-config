@@ -138,6 +138,9 @@ set incsearch
 " highlighted search results
 set hlsearch
 
+" set path
+set path=$PWD/**
+
 " syntax highlight on
 syntax on
 
@@ -245,8 +248,20 @@ let g:tagbar_autofocus = 1
 map <F3> :NERDTreeToggle<CR>
 " open nerdtree with the current file selected
 nmap ,t :NERDTreeFind<CR>
+" open nerdtree action
+nmap .. :NERDTree<CR>
+" close nerdtree action
+nmap ,, :NERDTreeClose<CR>
 " don;t show these file types
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'vimbly_activitys']
+" auto start NERDTree
+autocmd vimenter * NERDTree
+" nerdtree menu width
+let g:NERDTreeWinSize = 30
+" show bookmarks on top of menu
+let NERDTreeShowBookmarks=1
+" close nerdtree when closing content.
+let g:nerdtree_tabs_autoclose=1
 
 
 " Tasklist ------------------------------
@@ -391,6 +406,7 @@ highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
 highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+highlight LineNr ctermfg=grey
 
 " Window Chooser ------------------------------
 
