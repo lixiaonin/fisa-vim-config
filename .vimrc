@@ -220,9 +220,6 @@ set viminfo+=n~/.vim/dirs/viminfo
 " store yankring history file there too
 let g:yankring_history_dir = '~/.vim/dirs/'
 
-" trying another color scheme.
-let g:molokai_original = 1
-
 " create needed directories if they don't exist
 if !isdirectory(&backupdir)
     call mkdir(&backupdir, "p")
