@@ -239,6 +239,7 @@ endif
 
 " toggle tagbar display
 map <F4> :TagbarToggle<CR>
+nmap .. :TagbarToggle<CR>
 " autofocus on tagbar open
 let g:tagbar_autofocus = 1
 let g:tagbar_width = 50
@@ -247,12 +248,13 @@ let g:tagbar_width = 50
 
 " toggle nerdtree display
 map <F3> :NERDTreeToggle<CR>
+nmap ,, :NERDTreeToggle<CR>
 " open nerdtree with the current file selected
 nmap ,t :NERDTreeFind<CR>
 " open nerdtree action
-nmap .. :NERDTree<CR>
+" nmap .. :NERDTree<CR>
 " close nerdtree action
-nmap ,, :NERDTreeClose<CR>
+" nmap ,, :NERDTreeClose<CR>
 " don;t show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'vimbly_activitys']
 " auto start NERDTree
