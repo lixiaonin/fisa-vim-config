@@ -125,6 +125,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" delete current file.
+nnoremap rm :call delete(expand('%')) \| bdelete!<CR>
+
 " tab length exceptions on some file types
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -183,6 +186,7 @@ ca w!! w !sudo tee "%"
 " both recursive grep commands with internal or external (fast) grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
+set nowrap
 " mappings to call them
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
