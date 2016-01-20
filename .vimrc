@@ -297,7 +297,9 @@ map <F12> :Dbg up<CR>
 " CtrlP ------------------------------
 
 " file finder mapping
-let g:ctrlp_map = ',e'
+"" let g:ctrlp_map = ',e'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 " tags (symbols) in current file finder mapping
 nmap ,g :CtrlPBufTag<CR>
 " tags (symbols) in all files finder mapping
