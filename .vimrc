@@ -31,19 +31,19 @@ Bundle 'gmarik/vundle'
 " Plugins from github repos:
 
 " Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+"" Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
-Bundle 'scrooloose/nerdcommenter'
+"" Bundle 'scrooloose/nerdcommenter'
 " Class/module browser
-Bundle 'majutsushi/tagbar'
+"" Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
-Bundle 'kien/ctrlp.vim'
+"" Bundle 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
-Bundle 'fisadev/vim-ctrlp-cmdpalette'
+"" Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/emmet-vim'
+"" Bundle 'mattn/emmet-vim'
 " Git integration
 Bundle 'motemen/git-vim'
 " Tab list panel
@@ -53,37 +53,37 @@ Bundle 'bling/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
-Bundle 'rosenfeld/conque-term'
+"" Bundle 'rosenfeld/conque-term'
 " Pending tasks list
-Bundle 'fisadev/FixedTaskList.vim'
+"" Bundle 'fisadev/FixedTaskList.vim'
 " Surround
-Bundle 'tpope/vim-surround'
+"" Bundle 'tpope/vim-surround'
 " Autoclose
 Bundle 'Townk/vim-autoclose'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+"""  Bundle 'klen/python-mode'
 " Better autocompletion
-Bundle 'Shougo/neocomplcache.vim'
+"" Bundle 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+"" Bundle 'MarcWeber/vim-addon-mw-utils'
+"" Bundle 'tomtom/tlib_vim'
+"" Bundle 'honza/vim-snippets'
+"" Bundle 'garbas/vim-snipmate'
 " Git/mercurial/others diff icons on the side of the file lines
-Bundle 'mhinz/vim-signify'
+"" Bundle 'mhinz/vim-signify'
 " Automatically sort python imports
-Bundle 'fisadev/vim-isort'
+"" Bundle 'fisadev/vim-isort'
 " Drag visual blocks arround
-Bundle 'fisadev/dragvisuals.vim'
+"" Bundle 'fisadev/dragvisuals.vim'
 " Window chooser
-Bundle 't9md/vim-choosewin'
+"" Bundle 't9md/vim-choosewin'
 " Python and other languages code checker
-Bundle 'scrooloose/syntastic'
+"" Bundle 'scrooloose/syntastic'
 " Paint css colors with the real color
-Bundle 'lilydjwg/colorizer'
+"" Bundle 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -94,13 +94,13 @@ Bundle 'lilydjwg/colorizer'
 " Plugins from vim-scripts repos:
 
 " Search results counter
-Bundle 'IndexedSearch'
+"" Bundle 'IndexedSearch'
 " XML/HTML tags navigation
-Bundle 'matchit.zip'
+"" Bundle 'matchit.zip'
 " Gvim colorscheme
-Bundle 'Wombat'
+"" Bundle 'Wombat'
 " Yank history navigation
-Bundle 'YankRing.vim'
+"" Bundle 'YankRing.vim'
 
 " ============================================================================
 " Install plugins the first time vim runs
