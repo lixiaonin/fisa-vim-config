@@ -37,7 +37,7 @@ Bundle 'scrooloose/nerdtree'
 " Code commenter
 "" Bundle 'scrooloose/nerdcommenter'
 " Class/module browser
-Bundle 'majutsushi/tagbar'
+""Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
@@ -45,11 +45,11 @@ Bundle 'kien/ctrlp.vim'
 " Zen coding
 "" Bundle 'mattn/emmet-vim'
 " Git integration
-Bundle 'motemen/git-vim'
+""Bundle 'motemen/git-vim'
 " Tab list panel
-Bundle 'kien/tabman.vim'
+""Bundle 'kien/tabman.vim'
 " Airline
-Bundle 'bling/vim-airline'
+""Bundle 'bling/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
@@ -64,9 +64,9 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+"" Bundle 'klen/python-mode'
 " Better autocompletion
-Bundle 'Shougo/neocomplcache.vim'
+""Bundle 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 "" Bundle 'MarcWeber/vim-addon-mw-utils'
 "" Bundle 'tomtom/tlib_vim'
@@ -81,9 +81,9 @@ Bundle 'mhinz/vim-signify'
 " Window chooser
 "" Bundle 't9md/vim-choosewin'
 " Python and other languages code checker
-Bundle 'scrooloose/syntastic'
+""Bundle 'scrooloose/syntastic'
 " Paint css colors with the real color
-Bundle 'lilydjwg/colorizer'
+""Bundle 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -463,7 +463,7 @@ let g:airline#extensions#whitespace#enabled = 0
 "
 " Without any arguments the current buffer is kept.  With an argument the
 " buffer name/number supplied is kept.
-
+if 0
 command! -nargs=? -complete=buffer -bang Bonly
     \ :call BufOnly('<args>', '<bang>')
 command! -nargs=? -complete=buffer -bang BOnly
@@ -520,3 +520,4 @@ function! BufOnly(buffer, bang)
 	endif
 
 endfunction
+endif
