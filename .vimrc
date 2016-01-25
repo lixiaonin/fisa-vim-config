@@ -35,9 +35,9 @@ Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
-"" Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
 " Class/module browser
-""Bundle 'majutsushi/tagbar'
+Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
@@ -49,7 +49,7 @@ Bundle 'kien/ctrlp.vim'
 " Tab list panel
 ""Bundle 'kien/tabman.vim'
 " Airline
-""Bundle 'bling/vim-airline'
+Bundle 'bling/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
@@ -64,9 +64,9 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-"" Bundle 'klen/python-mode'
+Bundle 'klen/python-mode'
 " Better autocompletion
-""Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 "" Bundle 'MarcWeber/vim-addon-mw-utils'
 "" Bundle 'tomtom/tlib_vim'
@@ -79,11 +79,11 @@ Bundle 'mhinz/vim-signify'
 " Drag visual blocks arround
 "" Bundle 'fisadev/dragvisuals.vim'
 " Window chooser
-"" Bundle 't9md/vim-choosewin'
+Bundle 't9md/vim-choosewin'
 " Python and other languages code checker
-""Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/syntastic' =====================> slows 'grep' down
 " Paint css colors with the real color
-""Bundle 'lilydjwg/colorizer'
+Bundle 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -94,11 +94,11 @@ Bundle 'mhinz/vim-signify'
 " Plugins from vim-scripts repos:
 
 " Search results counter
-"" Bundle 'IndexedSearch'
+""Bundle 'IndexedSearch'
 " XML/HTML tags navigation
 "" Bundle 'matchit.zip'
 " Gvim colorscheme
-"" Bundle 'Wombat'
+""Bundle 'Wombat'
 " Yank history navigation
 "" Bundle 'YankRing.vim'
 
@@ -114,6 +114,10 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
+
+" Vertically expand splited window.
+map <Up> <C-W>+
+map <Down> <C-W>-
 
 " Mute the warning when change buffer without :w, unless doing quit.
 set hidden
@@ -136,6 +140,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
+
 " always show status bar
 set ls=2
 
@@ -156,13 +161,25 @@ set nu
 " tab navigation mappings
 map tn :tabn<CR>
 map tp :tabp<CR>
+map <RIGHT> :tabn<CR>
+map <LEFT> :tabp<CR>
 map tm :tabm 
-map tt :tabnew 
+map tt :tabnew<CR> 
 map ts :tab split<CR>
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
 imap <C-S-Left> <ESC>:tabp<CR>
+nmap t1 :tabfirst<CR>
+nmap t2 2gt
+nmap t3 3gt
+nmap t4 4gt
+nmap t5 5gt
+nmap t6 6gt
+nmap t7 7gt
+nmap t8 8gt
+nmap t9 :tablast<CR>
+
 
 " navigate windows with meta+arrows
 map <M-Right> <c-w>l
