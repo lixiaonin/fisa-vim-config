@@ -116,8 +116,8 @@ endif
 " You can edit them as you wish
 
 " Vertically expand splited window.
-map <Up> <C-W>+
-map <Down> <C-W>-
+map <Up> <C-W>+<C-W>+
+map <Down> <C-W>-<C-W>-
 
 " Mute the warning when change buffer without :w, unless doing quit.
 set hidden
