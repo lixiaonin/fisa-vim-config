@@ -114,6 +114,7 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
+let mapleader = ',' 
 
 " Vertically expand splited window.
 map <Up> <C-W>+<C-W>+
@@ -159,6 +160,8 @@ syntax on
 set nu
 
 " tab navigation mappings
+map te :tabedit 
+map tf :tabfind 
 map tn :tabn<CR>
 map tp :tabp<CR>
 map <RIGHT> :tabn<CR>
