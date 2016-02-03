@@ -137,9 +137,9 @@ set shiftwidth=4
 nnoremap rm :call delete(expand('%')) \| bdelete!<CR>
 
 " tab length exceptions on some file types
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType htmldjango setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 
 " always show status bar
@@ -283,7 +283,7 @@ nmap ,t :NERDTreeFind<CR>
 " close nerdtree action
 " nmap ,, :NERDTreeClose<CR>
 " don;t show these file types
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'vimbly_activitys']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'vimbly_activitys', '\.jepg$', '\.jpg$', '\.png$']
 " auto start NERDTree
 autocmd vimenter * NERDTree
 " nerdtree menu width
