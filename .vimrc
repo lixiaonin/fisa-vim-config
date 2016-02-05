@@ -50,7 +50,7 @@ Bundle 'kien/ctrlp.vim'
 ""Bundle 'kien/tabman.vim'
 " Airline
 Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
+" Bundle 'vim-airline/vim-airline-themes'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
@@ -453,9 +453,9 @@ let g:choosewin_overlay_enable = 1
 
 " Airline ------------------------------
 
-let g:airline_powerline_fonts = 0
-let g:airline_theme = 'bubblegum'
-let g:airline#extensions#whitespace#enabled = 0
+" let g:airline_powerline_fonts = 0
+" let g:airline_theme = 'bubblegum'
+" let g:airline#extensions#whitespace#enabled = 0
 
 " to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
