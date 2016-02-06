@@ -81,7 +81,7 @@ Bundle 'mhinz/vim-signify'
 " Window chooser
 Bundle 't9md/vim-choosewin'
 " Python and other languages code checker
-"Bundle 'scrooloose/syntastic' =====================> slows 'grep' down
+Bundle 'scrooloose/syntastic' 
 " Paint css colors with the real color
 Bundle 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
@@ -359,7 +359,7 @@ let g:ctrlp_custom_ignore = {
 " show list of errors and warnings on the current file
 nmap <leader>e :Errors<CR>
 " check also when just opened the file
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 0
 " custom icons (enable them if you use a patched font, and enable the previous 
@@ -453,9 +453,9 @@ let g:choosewin_overlay_enable = 1
 
 " Airline ------------------------------
 
-let g:airline_powerline_fonts = 0
-let g:airline_theme = 'bubblegum'
-let g:airline#extensions#whitespace#enabled = 0
+" let g:airline_powerline_fonts = 0
+" let g:airline_theme = 'bubblegum'
+" let g:airline#extensions#whitespace#enabled = 0
 
 " to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
