@@ -285,7 +285,8 @@ nmap ,t :NERDTreeFind<CR>
 " don;t show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'vimbly_activitys', '\.jepg$', '\.jpg$', '\.png$']
 " auto start NERDTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+" autocmd VimEnter * wincmd p
 " nerdtree menu width
 let g:NERDTreeWinSize = 30
 " show bookmarks on top of menu
