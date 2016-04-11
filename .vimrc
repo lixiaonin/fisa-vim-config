@@ -30,11 +30,12 @@ Bundle 'gmarik/vundle'
 
 " Plugins from github repos:
 
+
 Bundle 'fatih/vim-go'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
-Bundle 'scrooloose/nerdcommenter'
+" Bundle 'scrooloose/nerdcommenter'
 " Class/module browser
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
@@ -45,20 +46,25 @@ Bundle 'vim-airline/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Surround
-Bundle 'tpope/vim-surround'
+" Bundle 'tpope/vim-surround'
 " Autoclose
-Bundle 'Townk/vim-autoclose'
+" Bundle 'Townk/vim-autoclose'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+" Bundle 'klen/python-mode'
 " Better autocompletion
-Bundle 'Shougo/neocomplcache.vim'
+" Bundle 'Shougo/neocomplcache.vim'
+" Snippets manager (SnipMate), dependencies, and snippets repo
+"" Bundle 'MarcWeber/vim-addon-mw-utils'
+"" Bundle 'tomtom/tlib_vim'
+"" Bundle 'honza/vim-snippets'
+"" Bundle 'garbas/vim-snipmate'
 " Git/mercurial/others diff icons on the side of the file lines
 Bundle 'mhinz/vim-signify'
 " Window chooser
-Bundle 't9md/vim-choosewin'
+" Bundle 't9md/vim-choosewin'
 " Python and other languages code checker
 Bundle 'scrooloose/syntastic' 
 " Paint css colors with the real color
