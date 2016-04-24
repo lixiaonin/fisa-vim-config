@@ -102,7 +102,7 @@ set softtabstop=4
 set shiftwidth=4
 
 " delete current file.
-nnoremap rm :call delete(expand('%')) \| bdelete!<CR>
+" nnoremap rm :call delete(expand('%')) \| bdelete!<CR>
 
 " tab length exceptions on some file types
 autocmd FileType html setlocal shiftwidth=4 tabstop=4 softtabstop=4
