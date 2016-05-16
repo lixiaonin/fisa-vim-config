@@ -171,8 +171,8 @@ map tt :tabnew<CR>
 map ts :tab split<CR>
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
-map <C-S-Left> :tabp<CR>
-imap <C-S-Left> <ESC>:tabp<CR>
+" map <C-S-Left> :tabp<CR>
+" imap <C-S-Left> <ESC>:tabp<CR>
 nmap t1 :tabfirst<CR>
 nmap t2 2gt
 nmap t3 3gt
