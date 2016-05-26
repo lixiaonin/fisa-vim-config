@@ -369,6 +369,16 @@ let g:syntastic_enable_signs = 0
 "let g:syntastic_warning_symbol = '⚠'
 "let g:syntastic_style_error_symbol = '✗'
 "let g:syntastic_style_warning_symbol = '⚠'
+let g:syntastic_quiet_messages = {
+    \ '!level':  'errors',
+    \ 'type':    'style',
+    \ 'regex':   '\m\[C03\d\d\]',
+    \ 'file:p':  ['\m\c\.h$'] }
+" let g:syntastic_quiet_messages = {
+"     \ '!level':  'errors',
+"     \ 'type':    'style',
+"     \ 'regex':   '\[F4\d\d\]',
+"     \ 'file:p':  ['\m\c\.h$'] }
 
 " Python-mode ------------------------------
 
